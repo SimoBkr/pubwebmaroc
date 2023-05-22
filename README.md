@@ -2,10 +2,6 @@
 
 A simple landing page for a digital agency
 
-![PWM light Theme](./screens/demoLight.webp)
-![PWM Dark Theme](./screens/demoDark.webp)
-
-
 ## Tools
 - TailwindCSS v3.3
 - AstroJs 
