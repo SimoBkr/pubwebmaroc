@@ -5,7 +5,36 @@ import Paragraph from "../shared/Paragraph.astro";
 import ByNumber from "./ByNumber.astro";
 
 ---
-
+<script>
+    // Define the slideshow interval in milliseconds
+    var slideshowInterval = 2000;
+    
+    // Get all the slideshow images
+    var slideshowImages = document.getElementsByClassName('slideshow-img');
+    
+    // Initialize the index of the current image
+    var currentImageIndex = 0;
+    
+    // Function to show the next image
+    function showNextImage() {
+      // Hide the current image
+      slideshowImages[currentImageIndex].style.display = 'none';
+      
+      // Increment the current image index
+      currentImageIndex = (currentImageIndex + 1) % slideshowImages.length;
+      
+      // Show the next image
+      slideshowImages[currentImageIndex].style.display = 'block';
+    }
+    
+    // Initial setup: hide all images except the first one
+    for (var i = 1; i < slideshowImages.length; i++) {
+      slideshowImages[i].style.display = 'none';
+    }
+    
+    // Start the slideshow
+    setInterval(showNextImage, slideshowInterval);
+  </script>
 <section class="relative pt-32 lg:pt-36">
     <Container className={"flex flex-col lg:flex-row gap-10 lg:gap-12"}>
         <div class="absolute w-full lg:w-1/2 inset-y-0 lg:right-0 ">
@@ -30,7 +59,13 @@ import ByNumber from "./ByNumber.astro";
         </div>
 
         <div class="flex flex-1 lg:w-1/2 lg:h-auto relative lg:max-w-none lg:mx-0 mx-auto max-w-3xl">
-            <img src="/images/image1.webp" alt="Hero image" width="2350" height="2359" class="lg:absolute lg:w-full lg:h-full rounded-3xl object-cover lg:max-h-none max-h-96">
+            <img src="/images/whyus/why.jpg" alt="Hero image" width="2500" height="2359" class="slideshow-img lg:absolute lg:w-full lg:h-full rounded-3xl object-cover lg:max-h-none max-h-96 simo" style="object-fit:initial">
+            <img src="/images/whyus/why1.jpg" alt="Hero image" width="2500" height="2359" class="slideshow-img lg:absolute lg:w-full lg:h-full rounded-3xl object-cover lg:max-h-none max-h-96 simo" style="object-fit:initial">
+            <img src="/images/whyus/why2.jpg" alt="Hero image" width="2500" height="2359" class="slideshow-img lg:absolute lg:w-full lg:h-full rounded-3xl object-cover lg:max-h-none max-h-96 simo" style="object-fit:initial">
+            <img src="/images/whyus/why3.jpg" alt="Hero image" width="2500" height="2359" class="slideshow-img lg:absolute lg:w-full lg:h-full rounded-3xl object-cover lg:max-h-none max-h-96 simo" style="object-fit:initial">
+            <img src="/images/whyus/why4.jpg" alt="Hero image" width="2500" height="2359" class="slideshow-img lg:absolute lg:w-full lg:h-full rounded-3xl object-cover lg:max-h-none max-h-96 simo" style="object-fit:initial">
+            <img src="/images/whyus/why5.jpg" alt="Hero image" width="2500" height="2359" class="slideshow-img lg:absolute lg:w-full lg:h-full rounded-3xl object-cover lg:max-h-none max-h-96 simo" style="object-fit:initial">
+            <img src="/images/whyus/why6.jpg" alt="Hero image" width="2500" height="2359" class="slideshow-img lg:absolute lg:w-full lg:h-full rounded-3xl object-cover lg:max-h-none max-h-96 simo" style="object-fit:initial">
         </div>
     </Container>
 
