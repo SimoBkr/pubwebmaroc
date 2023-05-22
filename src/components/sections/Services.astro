@@ -1,0 +1,64 @@
+---
+import Service from "../cards/Service.astro";
+import Container from "../shared/Container.astro";
+import Paragraph from "../shared/Paragraph.astro";
+import Title from "../shared/Title.astro";
+
+---
+
+<section id="services">
+    <Container className="space-y-10 md:sapce-y-12">
+        <div class="text-center max-w-3xl mx-auto space-y-4">
+            <Title>
+                Nos Offres
+            </Title>
+            <Paragraph>
+                Nous sommes fiers de vous présenter notre services de qualité supérieure qui répondra à tous vos besoins.
+            </Paragraph>
+        </div>
+        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
+            <Service title="Gestion des Réseaux Sociaux" description="Vous cherchez à développer votre présence en ligne et à renforcer votre marque sur les réseaux sociaux ? Ne cherchez plus, notre service de gestion des réseaux sociaux est là pour vous aider.">
+                <span slot="icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M6 12L3.269 3.126A59.768 59.768 0 0121.485 12 59.77 59.77 0 013.27 20.876L5.999 12zm0 0h7.5" />
+                    </svg> 
+                </span>
+            </Service>
+            <Service title="Création des Sites Web" description="Vous voulez vous démarquer de la concurrence et offrir à votre entreprise une présence en ligne professionnelle et efficace ? Ne cherchez pas plus loin que notre service de création de sites Web.">
+                <span slot="icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M6 12L3.269 3.126A59.768 59.768 0 0121.485 12 59.77 59.77 0 013.27 20.876L5.999 12zm0 0h7.5" />
+                    </svg> 
+                </span>
+            </Service>
+            <Service title="Conception Graphique" description="Vous cherchez à créer une image de marque exceptionnelle pour votre entreprise ? Notre service de conception graphique est là pour vous aider à créer des designs graphiques sur mesure qui vous aideront à vous démarquer de la concurrence.">
+                <span slot="icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M6 12L3.269 3.126A59.768 59.768 0 0121.485 12 59.77 59.77 0 013.27 20.876L5.999 12zm0 0h7.5" />
+                    </svg> 
+                </span>
+            </Service>
+            <Service title="Création des Videos Publicitaires" description="Vous cherchez à donner vie à votre message marketing avec des vidéos publicitaires de qualité professionnelle ? Ne cherchez pas plus loin que notre service de création de vidéos publicitaires.">
+                <span slot="icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M6 12L3.269 3.126A59.768 59.768 0 0121.485 12 59.77 59.77 0 013.27 20.876L5.999 12zm0 0h7.5" />
+                    </svg> 
+                </span>
+            </Service>
+            <Service title="E-Marketing" description="Notre équipe d'experts en marketing digital est spécialisée dans la création de stratégies de marketing en ligne efficaces qui augmentent la visibilité de votre entreprise, génèrent des prospects qualifiés et augmentent les ventes. Nous travaillons en étroite collaboration avec vous pour comprendre vos objectifs commerciaux et créer des campagnes de marketing en ligne personnalisées qui répondent à vos besoins.">
+                <span slot="icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M6 12L3.269 3.126A59.768 59.768 0 0121.485 12 59.77 59.77 0 013.27 20.876L5.999 12zm0 0h7.5" />
+                    </svg> 
+                </span>
+            </Service>
+            <Service title="Optimisation du SEO" description="Vous cherchez à améliorer la visibilité de votre site Web et à attirer davantage de visiteurs qualifiés ? Notre service d'optimisation du référencement naturel (SEO) est là pour vous aider à atteindre ces objectifs.e">
+                <span slot="icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M6 12L3.269 3.126A59.768 59.768 0 0121.485 12 59.77 59.77 0 013.27 20.876L5.999 12zm0 0h7.5" />
+                    </svg> 
+                </span>
+            </Service>
+        </div>
+    </Container>
+</section>

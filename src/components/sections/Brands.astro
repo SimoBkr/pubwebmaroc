@@ -1,0 +1,32 @@
+---
+import Container from "../shared/Container.astro";
+import Title from "../shared/Title.astro";
+
+---
+
+<section>
+    <Container className="space-y-8">
+        <div class="text-center max-w-3xl mx-auto">
+            <Title>
+                Approuvé par des entreprises comme
+            </Title>
+        </div>
+        <div class="flex justify-center flex-wrap gap-4">
+            <a href="https://www.instagram.com/dentisto.app/" target="_blank">
+                <div class="p-4 sm:p-5 rounded-xl bg-body border border-box-border group">
+                    <img src="/logos/logo-header-inverse-v2.svg" width="100" height="60" alt="spotify" class="h-7 sm:h-10 w-auto ease-linear duration-300 grayscale group-hover:!grayscale-0 group-hover:scale-105">
+                </div>
+            </a>
+            <a href="https://www.instagram.com/daraltomour/" target="_blank">
+                <div class="p-4 sm:p-5 rounded-xl bg-body border border-box-border group">
+                    <img src="/logos/daraltomourlogo.png" width="100" height="60" alt="slack" class="h-7 sm:h-10 w-auto ease-linear duration-300 grayscale group-hover:!grayscale-0 group-hover:scale-105">
+                </div>
+            </a>
+            <a href="https://www.instagram.com/manray_drugstore_product/" target="_blank">
+                <div class="p-4 sm:p-5 rounded-xl bg-body border border-box-border group" style="background-color: black;">
+                    <img src="/logos/manrf.png" width="100" height="60" alt="paypal" class="h-7 sm:h-10 w-auto ease-linear duration-300 grayscale group-hover:!grayscale-0 group-hover:scale-105">
+                </div>
+            </a>
+        </div>
+    </Container>
+</section>
